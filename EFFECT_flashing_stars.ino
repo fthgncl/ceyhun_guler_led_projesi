@@ -7,6 +7,6 @@ void flashingStars() {
   flashingStarsPeriot = 0;
   
   fadeToBlackBy( leds, 232, 10);
-  int pos = random16(232);
+  int pos = random16(NUM_LEDS);
   leds[pos] += CHSV( random8(128), random8(128), random8(128));
 }
