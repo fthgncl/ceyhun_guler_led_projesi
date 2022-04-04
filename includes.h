@@ -3,9 +3,9 @@
 
 /* Blynk includes */
 #define BLYNK_FIRMWARE_VERSION "0.1"
-#define BLYNK_TEMPLATE_ID "TMPLixMwkJME"
-#define BLYNK_DEVICE_NAME "Led Kontrol Cihazım"
-#define BLYNK_AUTH_TOKEN "_cSSGCiFYwuC710XfSsZct2krnvqUR99"
+#define BLYNK_TEMPLATE_ID "TMPLO8E6fVpN"
+#define BLYNK_DEVICE_NAME "Led Kontrol Aygıtı"
+#define BLYNK_AUTH_TOKEN "NufO2c7BI4ZuMek_HQ0nBjUBogjfbc3_"
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
