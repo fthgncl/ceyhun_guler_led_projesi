@@ -1,6 +1,3 @@
-char ssid[] = "fthgncl";
-char pass[] = "00180018Ff";
-
 byte manualBlynkRGB[3];
 
 void blynk_setup() {

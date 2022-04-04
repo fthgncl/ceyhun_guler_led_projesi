@@ -1,19 +1,23 @@
 #define ARRAY_SIZE(array) ((sizeof(array))/(sizeof(array[0])))
 #include <ArduinoJson.h>
 
+/* Wifi includes */
+#include <ESP8266WiFi.h>
+char ssid[] = "fthgncl";
+char pass[] = "00180018Ff";
+/***********************/
+
 /* Blynk includes */
 #define BLYNK_FIRMWARE_VERSION "0.1"
 #define BLYNK_TEMPLATE_ID "TMPLO8E6fVpN"
 #define BLYNK_DEVICE_NAME "Led Kontrol Aygıtı"
 #define BLYNK_AUTH_TOKEN "NufO2c7BI4ZuMek_HQ0nBjUBogjfbc3_"
 #define BLYNK_PRINT Serial
-#include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 bool gameEffects = true;
 /***********************/
 
 /* Async WebServer includes */
-#include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include <AsyncElegantOTA.h>
