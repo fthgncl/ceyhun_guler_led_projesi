@@ -6,19 +6,12 @@ bool firtTimeEffect[EFFECT_COUNTS];
 void effect_control_setup() {
 
   allEffects[0].create(continuousUse);  /// DemoReel
-  allEffects[0].addWorkTime(19, 00, 21, 00);
 
-  allEffects[1].create(singleUse);  /// Circle night lamb
-  allEffects[1].addWorkTime(04, 20, 06, 20);
+  allEffects[1].create(singleUse);  /// Parçalanmış Renkler
 
   allEffects[2].create(continuousUse);  /// Flashing Stars
-  allEffects[2].addWorkTime(21, 00, 00, 30);
 
-  allEffects[3].create(continuousUse);  /// Dynamic Circle
-  allEffects[3].addWorkTime(21, 00, 23, 30);
-
-  allEffects[4].create(continuousUse);  /// Wandering Spots
-  allEffects[4].addWorkTime(12, 00, 19, 00);
+  allEffects[3].create(continuousUse);  /// Wandering Spots
 
 }
 void effect_control_loop() {
@@ -39,7 +32,7 @@ void effect_control_loop() {
 void runEffect(byte num, bool useType) {
   if ( useType == singleUse ) {       // Single Use
     switch ( allEffects[num].id ) {
-      case 1 : avizeKemeri();
+      case 1 : parcalanmisRenkler();
         break;
     }
   }
@@ -50,9 +43,7 @@ void runEffect(byte num, bool useType) {
         break;
       case 2 : flashingStars();
         break;
-      case 3 : dynamic_circle_loop();
-        break;
-      case 4 : wandering_spots_setup();
+      case 3 : wandering_spots_setup();
         break;
     }
   }

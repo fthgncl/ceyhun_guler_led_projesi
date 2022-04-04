@@ -1,7 +1,6 @@
-char ssid[] = "TRC";
-char pass[] = "ist34ank06";
+char ssid[] = "fthgncl";
+char pass[] = "00180018Ff";
 
-#define PIN_RunByTime = 0
 byte manualBlynkRGB[3];
 
 void blynk_setup() {
@@ -49,8 +48,7 @@ void blynkUpdateDashBoard() {
   Blynk.virtualWrite(V1, activityStatus(0));
   Blynk.virtualWrite(V2, activityStatus(1));
   Blynk.virtualWrite(V3, activityStatus(2));
-  Blynk.virtualWrite(V8, activityStatus(3));
-  Blynk.virtualWrite(V10, activityStatus(4));
+  Blynk.virtualWrite(V10, activityStatus(3));
   Blynk.virtualWrite(V4, gameEffects);
 }
 bool activityStatus(byte effectNo) {
@@ -81,12 +79,7 @@ BLYNK_WRITE(V3)  {  // Efekt 3
   changeEffectManualWorkStatus(2, runByTime ? false : param.asInt());
   Blynk.virtualWrite(V3, activityStatus(2));
 }
-
-BLYNK_WRITE(V8)  {  // Efekt 4
-  changeEffectManualWorkStatus(3, runByTime ? false : param.asInt());
-  Blynk.virtualWrite(V8, activityStatus(3));
-}
-BLYNK_WRITE(V10)  {  // Efekt 5
+BLYNK_WRITE(V10)  {  // Efekt 4
   changeEffectManualWorkStatus(4, runByTime ? false : param.asInt());
   Blynk.virtualWrite(V10, activityStatus(4));
 }
@@ -128,10 +121,7 @@ void updateBlinkEffectData(byte num, int idata) {
     case 2: Blynk.virtualWrite(V3, idata);
       break;
 
-    case 3: Blynk.virtualWrite(V4, idata);
-      break;
-
-    case 4: Blynk.virtualWrite(V10, idata);
+    case 3: Blynk.virtualWrite(V10, idata);
       break;
   }
 }
