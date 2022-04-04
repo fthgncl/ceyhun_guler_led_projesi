@@ -13,12 +13,8 @@ void blynk_loop() {
 }
 
 void sendSystemReport() {
-
   timeClient.update();
-
-  Blynk.virtualWrite(V9,"Son Güncellenme Tarihi : " + getTimeStampString() + " | Local IP : " + WiFi.localIP().toString() + " : " + String(webServerPort));
-
-
+  Blynk.virtualWrite(V9,"Son Güncellenme Tarihi : " + getTimeStampString() + " | Local IP : " + WiFi.localIP().toString() + ":" + String(webServerPort));
 }
 String getTimeStampString() {
   time_t rawtime = timeClient.getEpochTime();
