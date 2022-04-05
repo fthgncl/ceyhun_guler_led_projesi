@@ -4,7 +4,7 @@
 const bool singleUse = true;
 const bool continuousUse = !singleUse;
 int effectCount = 0;
-bool runByTime = true;
+bool runByTime = false;
 
 class Effect
 {
