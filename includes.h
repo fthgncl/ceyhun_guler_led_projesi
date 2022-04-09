@@ -8,7 +8,7 @@ char pass[] = "9990475316";
 /***********************/
 
 /* Blynk includes */
-#define BLYNK_FIRMWARE_VERSION "0.1"
+#define BLYNK_FIRMWARE_VERSION "2.0"
 #define BLYNK_TEMPLATE_ID "TMPLO8E6fVpN"
 #define BLYNK_DEVICE_NAME "Led Kontrol Aygıtı"
 #define BLYNK_AUTH_TOKEN "NufO2c7BI4ZuMek_HQ0nBjUBogjfbc3_"
