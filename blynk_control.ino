@@ -73,8 +73,8 @@ BLYNK_WRITE(V3)  {  // Efekt 3
   Blynk.virtualWrite(V3, activityStatus(2));
 }
 BLYNK_WRITE(V10)  {  // Efekt 4
-  changeEffectManualWorkStatus(4, runByTime ? false : param.asInt());
-  Blynk.virtualWrite(V10, activityStatus(4));
+  changeEffectManualWorkStatus(3, runByTime ? false : param.asInt());
+  Blynk.virtualWrite(V10, activityStatus(3));
 }
 BLYNK_WRITE(V4)  {  // Game Effects ON/OFF
   gameEffects = param.asInt();
