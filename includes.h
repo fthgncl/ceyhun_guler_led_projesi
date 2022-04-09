@@ -3,8 +3,8 @@
 
 /* Wifi includes */
 #include <ESP8266WiFi.h>
-char ssid[] = "ceyhun";
-char pass[] = "Aa123456ceyhun";
+char ssid[] = "BESIKTAS";
+char pass[] = "9990475316";
 /***********************/
 
 /* Blynk includes */
