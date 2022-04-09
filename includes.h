@@ -13,6 +13,7 @@ char pass[] = "Aa123456ceyhun";
 #define BLYNK_DEVICE_NAME "Led Kontrol Aygıtı"
 #define BLYNK_AUTH_TOKEN "NufO2c7BI4ZuMek_HQ0nBjUBogjfbc3_"
 #define BLYNK_PRINT Serial
+#define MAX_AMPER 60
 #include <BlynkSimpleEsp8266.h>
 bool gameEffects = true;
 /***********************/
