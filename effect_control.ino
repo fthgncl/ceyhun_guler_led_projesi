@@ -13,6 +13,8 @@ void effect_control_setup() {
 
   allEffects[3].create(continuousUse);  /// Wandering Spots
 
+  allEffects[4].create(continuousUse);  /// Partly Cloudy
+
 }
 void effect_control_loop() {
 
@@ -44,6 +46,8 @@ void runEffect(byte num, bool useType) {
       case 2 : flashingStars();
         break;
       case 3 : wandering_spots_setup();
+        break;
+      case 4 : partly_cloudy();
         break;
     }
   }
